@@ -23,19 +23,25 @@ else
 function szamitas(){
     global $betet, $kamat, $szam,$tenyleges;
     $tenyleges=$betet*(pow((1+$kamat/(100*$szam)),$szam)-1);
+    echo "<div id='eredmenyForm' style='display:grid;grid-column: 4/6;margin:1vh auto;grid-row:2/5'>";
     echo "<form>";
     echo "<fieldset>";
 
     echo "<legend> Kamatszámítás</legend>";
-    echo "<label>Betét: ".$betet."</label>";
-	echo "<label>Névleges kamat(%): ".$kamat."</label>";
-    echo "<label>Évenkénti tőkésítésel száma: ".$szam."</label>";
+    echo "<label>Betét: ".$betet.
+    "<br></label>";
+	echo "<label>Névleges kamat(%): ".$kamat."<br></label>";
+    echo "<label>Évenkénti tőkésítések száma: ".$szam."<br></label>";
     echo "</fieldset><fieldset>";
 echo "<label>Tényleges éves kamat: ".$tenyleges."</label>";
 echo "</fieldset>
 </form>";
-
+echo "</div>";
+ echo "<div>";
 echo "<a href='formFeladat.php'> Új adatokat adok meg!</a>";
+ echo "</div>";
+    
+
 }
 
 echo file_get_contents('templatesFormFeladat/foot.tpl');
