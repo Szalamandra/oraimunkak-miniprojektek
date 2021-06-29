@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset238 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang1038 unit teszt\par
+majd end-to-end teszt ltrehoztam teszt-elek felhasznalot hozz\f1\lang1033\'e1\f0\lang1038\par
+\par
+frameworkot nem hasznaltam hoz\f1\lang1033\'e1\'e1\f0\lang1038  mint pl qunit mocha stb...\par
+\par
+\par
+a m\f1\lang1033\'f6g\'f6ttes adatb\'e1zis szerep\'e9t lehetne bemutatni, arra is, hogy ki hogyan haszn\'e1lja fel azt, ak\'e1r a Wordpress mire \'e9s hogyan;\par
+a tesztel\'e9sn\'e9l kieg\'e9sz\'edteni, hogy milyen m\'f3dszerekkel tesztelt\'e9l, milyen adatokkal / a munka mely f\'e1zisaiban : mert a dokumentumban volt tesztel\'e9s t\'f6bb helyen, de \'f6ssze kellett volna szedni. Ez\'e9rt az \'f6n\'e1ll\'f3 bemutat\'f3dban kit\'e9rhetsz r\'e1, egy sz\'e9p eg\'e9ssz\'e9 alak\'edtva;\par
+bemutatod, hogy hogyan lehet alkalmazni, kicsit a l\'e1tv\'e1nyra koncentr\'e1lva is (mert a doksiban nem volt a k\'e9sz m\f0\'fbr\'f5l k\f1\'e9p, tal\'e1n csak egy, pedig valahogy egy sablonr\'f3l is musz\'e1j betenni valamit);\par
+a tov\'e1bbfejleszt\'e9s ir\'e1ny\'e1t konkr\'e9tabban kifejted, mint a dokumentumban.\par
+\par
+\par
+\par
+\f0\lang1038 -mint ahogy minden programoz\f1\lang1033\'f3\f0\lang1038  "lusta" \f1\lang1033\'e9\f0\lang1038 s egyszer\'fbs\f1\lang1033\'e9\f0\lang1038 gre,automatiz\f1\lang1033\'e1\f0\lang1038 lhat\f1\lang1033\'f3\f0\lang1038 s\f1\lang1033\'e1\f0\lang1038 gra t\f1\lang1033\'f6\f0\lang1038 rekszik, ez a gondolat ind\f1\lang1033\'ed\f0\lang1038 totta nekem is ezt a szakdolgozat t\f1\lang1033\'e9\f0\lang1038 m\f1\lang1033\'e1\f0\lang1038 t.\par
+-gyorsan, k\f1\lang1033\'f6\f0\lang1038 nnyen akartam egy viszonylag komplex adatbazissal rendelkez\'f5 honalpot l\f1\lang1033\'e9\f0\lang1038 trehozni,ami k\f1\lang1033\'e9\f0\lang1038 s\'f5bb k\f1\lang1033\'f6\f0\lang1038 nynen b\'f5v\f1\lang1033\'ed\f0\lang1038 thet\'f5, vagyis egy oylan alapot, ami azt\f1\lang1033\'e1\f0\lang1038 n kedvem szerint formz\f1\lang1033\'e1\f0\lang1038 hat\f1\lang1033\'f3\f0\lang1038\par
+- els\'f5 l\f1\lang1033\'e9\f0\lang1038 p\f1\lang1033\'e9\f0\lang1038 sben pr\f1\lang1033\'f3\f0\lang1038 b\f1\lang1033\'e1\f0\lang1038 ltam szimpl\f1\lang1033\'e1\f0\lang1038 n a wordpressen l\f1\lang1033\'e9\f0\lang1038 trehozni egy weboldalt, de sok probl\f1\lang1033\'e9\f0\lang1038 ma: nehezen tudtam alapvet\'f5 dolgokat m\f1\lang1033\'f3\f0\lang1038 dos\f1\lang1033\'ed\f0\lang1038 tani, t\f1\lang1033\'f6\f0\lang1038 bb t\f1\lang1033\'e9\f0\lang1038 m\f1\lang1033\'e1\f0\lang1038 t kipr\f1\lang1033\'f3\f0\lang1038 b\f1\lang1033\'e1\f0\lang1038 ltam, de mindegyiknek meg volt a limit\f1\lang1033\'e1\f0\lang1038 lts\f1\lang1033\'e1\f0\lang1038 ga...\par
+\par
+2.dia: \par
+2.pont: ak\f1\lang1033\'e1\f0\lang1038 r gondolok egy felhaszn\f1\lang1033\'e1\f0\lang1038 l\f1\lang1033\'f3\f0\lang1038 nak id\'f5vel v\f1\lang1033\'e1\f0\lang1038 ltozhatnak a honalpj\f1\lang1033\'e1\f0\lang1038 val kapcsolatos elv\f1\lang1033\'e1\f0\lang1038 r\f1\lang1033\'e1\f0\lang1038 sai\par
+Mivel egyszerre ak\f1\lang1033\'e1r t\'f6bb sablonnal is rendelkezik a felhaszn\'e1l\'f3, \'edgy a\par
+weboldalak kin\'e9zete \'e9s haszn\'e1lata an\'e9lk\'fcl vari\'e1lhat\'f3, hogy az inform\'e1ci\'f3s tartalom vagy\par
+strukt\'fara megv\'e1ltozna.\par
+\f0\lang1038 3.dia:\par
+cms- egy backend -adatbazis k\f1\lang1033\'f6\f0\lang1038 z\f1\lang1033\'f6\f0\lang1038 tti felhaszn\f1\lang1033\'e1\f0\lang1038 l\f1\lang1033\'f3\f0\lang1038 bartibb fel\f1\lang1033\'fc\f0\lang1038 let, innen is el\f1\lang1033\'e9\f0\lang1038 rhet\'f5ek a core f\f1\lang1033\'e1\f0\lang1038 jlok, de m\f1\lang1033\'f3\f0\lang1038 dos\f1\lang1033\'ed\f0\lang1038 t\f1\lang1033\'e1\f0\lang1038 sa nem \f1\lang1033\'e9\f0\lang1038 rdemes, mivel friss\f1\lang1033\'ed\f0\lang1038 t\f1\lang1033\'e9\f0\lang1038 s ha nem saj\f1\lang1033\'e1\f0\lang1038 t sablon\par
+pluginek: nehezen t\f1\lang1033\'f6\f0\lang1038 r\f1\lang1033\'f6\f0\lang1038 lhet\'f5ek:\par
+limit\f1\lang1033\'e1\f0\lang1038 lt a .org pl webshop\par
+.com: rejtett k\f1\lang1033\'fc\f0\lang1038 lts\f1\lang1033\'e9\f0\lang1038 gek: t\f1\lang1033\'e1\f0\lang1038 rhely+ domain\f1\lang1033\par
+A sablonok telep\'edt\'e9s\'e9re k\'e9t lehet\f0\'f5s\f1\'e9g van: FTP (\f2\'84File Transfer\par
+Protocol\rdblquote  - \'84F\f1\'e1jl \'e1tviteli protokoll\rdblquote ) felt\'f6lt\'e9s ut\'e1n be- \'e9s kikapcsolhat\'f3k a rendszer\par
+\f2\'84Vez\f1\'e9rl\f0\'f5pult/Dashboard\rdblquote  men\f1\'fcj\'e9n bel\'fcl tal\'e1lhat\'f3 \f2\'84Megjelen\f1\'e9s/Appearance\rdblquote  opci\'f3\par
+seg\'edts\'e9g\'e9vel, vagy ugyanebben a men\'fcben \f2\'84.zip\rdblquote  f\f1\'e1jlb\'f3l \'fagynevezett ,,1 klikk m\'f3dszerrel\rdblquote\par
+telep\'edthet\f0\'f5ek a sz\f1\'e1m\'edt\'f3g\'e9pr\f0\'f5l, vagy k\f1\'fcls\f0\'f5 hivatkoz\f1\'e1sr\'f3l/URL-\par
+A sablonok telep\'edt\'e9s\'e9re k\'e9t lehet\f0\'f5s\f1\'e9g van: FTP (\f2\'84File Transfer\par
+Protocol\rdblquote  - \'84F\f1\'e1jl \'e1tviteli protokoll\rdblquote ) felt\'f6lt\'e9s ut\'e1n be- \'e9s kikapcsolhat\'f3k a rendszer\par
+\f2\'84Vez\f1\'e9rl\f0\'f5pult/Dashboard\rdblquote  men\f1\'fcj\'e9n bel\'fcl tal\'e1lhat\'f3 \f2\'84Megjelen\f1\'e9s/Appearance\rdblquote  opci\'f3\par
+seg\'edts\'e9g\'e9vel, vagy ugyanebben a men\'fcben \f2\'84.zip\rdblquote  f\f1\'e1jlb\'f3l \'fagynevezett ,,1 klikk m\'f3dszerrel\rdblquote\par
+telep\'edthet\f0\'f5ek a sz\f1\'e1m\'edt\'f3g\'e9pr\f0\'f5l, vagy k\f1\'fcls\f0\'f5 hivatkoz\f1\'e1sr\'f3l/URL-\par
+\par
+MI AZ A SABLON?\par
+A sablon alapvet\f0\'f5en a diz\f1\'e1jnj\'e1t adja a honlapnak, nagyr\'e9szt ez tartalmazza a\par
+szerkezet\'e9t, megjelen\'e9s\'e9t. Azt a tartalmat \'e9s adatot jelen\'edti meg, amit az adatb\'e1zisunk t\'e1rol\par
+\f0\lang1038 MUKODES\par
+template fajlok amik  a template tegekkel(wp metodusok pl get_header()) plusz opcionalis param\f1\lang1033\'e9\f0\lang1038 ter meghivja a header.php-t\par
+el\'f5ny: a tartalom folyamatos kapcs az adatbazissal:hiszen innen hivja meg dinamikusan a tartalmat+ el\f1\lang1033\'e9\f0\lang1038 g egy helyen valtoztatni \f1\lang1033\'e9\f0\lang1038 s az midnehol kihat\par
+n\f1\lang1033\'e9\f0\lang1038 melyik template teg csak a loopon kereszt\f1\lang1033\'fc\f0\lang1038 l \f1\lang1033\'e9\f0\lang1038 rhet\'f5 el: ezek a globalis v\f1\lang1033\'e1\f0\lang1038 ltoz\f1\lang1033\'f3\f0\lang1038 kat hasznaljak fel:\par
+A WordPress alap template f\f1\lang1033\'e1jljai, a /wp-includes\par
+mapp\'e1ban tal\'e1lhat\'f3ak\f0\lang1038  ezek kaszkadszer\'fben t\f1\lang1033\'f6\f0\lang1038 lt\'f5dnek be\par
+alakitjak ki a tempate pageket\par
+A template f\f1\lang1033\'e1jlokat \'e9rdemes sz\'e9tbontani \f2\'84template partials\rdblquote  - ra. Ut\f1\'f3bbiak kisebb\par
+r\'e9szegys\'e9gei a f\'e1jloknak, melyek be\'e9p\'edtett f\'fcggv\'e9nyekkel (vagy template teg seg\'edts\'e9g\'e9vel) a\par
+felhaszn\'e1l\'e1s hely\'e9n megh\'edvhat\'f3ak. \'cdgy egyszer\f0\'fben lehet t\f1\'f6bbf\'e9le header.php-t gy\'e1\f0\lang1038\par
+\par
+h\f1\lang1033\'e1\f0\lang1038 tt\f1\lang1033\'e9\f0\lang1038 rk\f1\lang1033\'e9\f0\lang1038 pnek majd be\f1\lang1033\'e1\f0\lang1038 ll\f1\lang1033\'ed\f0\lang1038 tani a sablonk\f1\lang1033\'e9\f0\lang1038 pet\par
+\par
+loop:  Loop\par
+felhaszn\f1\lang1033\'e1l\'e1s\'e1val jelen\'edti meg a posztokat a sablon template f\'e1jljai alapj\'e1n\f0\lang1038  Ha blogposztr\f1\lang1033\'f3l\par
+van sz\'f3, azt, hogy egyszerre mennyi posztot jelen\'edt\'fcnk meg a backkend fel\'fclet \f2\'84Reading\par
+Settings\rdblquote  - ben determin\f1\'e1lhatja a felhaszn\'e1l\f0\lang1038 .  A posztokhoz tartoz\f1\lang1033\'f3 adatokat kinyeri az adatb\'e1zisb\'f3l \'e9s behelyezi az\par
+egyes template tegekbe. \par
+\par
+\f0\lang1038 functions.php -> funkciokkal felruh\f1\lang1033\'e1\f0\lang1038 zni, ez a k\f1\lang1033\'f6\f0\lang1038 vi amit keres a wp, de nem k\f1\lang1033\'f6\f0\lang1038 telez\'f5\par
+hooks--> horgonyok seg\f1\lang1033\'ed\f0\lang1038 t\f1\lang1033\'e9\f0\lang1038 s\f1\lang1033\'e9\f0\lang1038 g\f1\lang1033\'e9\f0\lang1038 vel m\f1\lang1033\'f3\f0\lang1038 dos\f1\lang1033\'ed\f0\lang1038 that\f1\lang1033\'f3\f0\lang1038  a core m\'fbk\f1\lang1033\'f6\f0\lang1038 d\f1\lang1033\'e9\f0\lang1038 se, k\f1\lang1033\'e9\f0\lang1038 s\'f5bb mi \f1\lang1033\'e9\f0\lang1038 sm\f1\lang1033\'e1\f0\lang1038 s felhasznal\f1\lang1033\'f3\f0\lang1038  is nyomon tudja k\f1\lang1033\'f6\f0\lang1038 vetni, pluginek is itt l\f1\lang1033\'e9\f0\lang1038 pnek be\par
+akcio: mint egy met\f1\lang1033\'f3\f0\lang1038 dus, filter: mint egy f\f1\lang1033\'fc\f0\lang1038 ggv\f1\lang1033\'e9\f0\lang1038 ny(min egy pm-t v\f1\lang1033\'e1\f0\lang1038 r de egyet ad vissza+priorit\f1\lang1033\'e1\f0\lang1038 sok\par
+\par
+setup-theme support\par
+\f1\lang14\par
+\par
+\f0\lang1038 end-to-end teszteles\par
+cross browser tesztel\f1\lang1033\'e9\f0\lang1038 s: mbilon illetve chrome reszponziv oldalat\par
+edge-ben tudtam safarin platfromok vannak:kobiron, saucelab,browserstack\f1\lang14\par
+}
+ 
