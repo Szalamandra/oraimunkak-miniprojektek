@@ -1,0 +1,10 @@
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\bin\Debug\logikai enprobalom.exe.config
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\bin\Debug\logikai enprobalom.exe
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\bin\Debug\logikai enprobalom.pdb
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Debug\logikai_enprobalom.Properties.Resources.resources
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Debug\logikai enprobalom.csproj.GenerateResource.cache
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Debug\logikai enprobalom.csproj.CoreCompileInputs.cache
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Debug\logikai enprobalom.exe
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Debug\logikai enprobalom.pdb
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Debug\logikai_enprobalom.Form2.resources
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Debug\logikai enprobalom.csprojAssemblyReference.cache
