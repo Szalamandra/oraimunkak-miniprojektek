@@ -1,0 +1,214 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset238 Calibri;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang14 package dominolanc;\par
+\f1\lang1038 minden int-et az elej\f0\lang1033\'e9\f1\lang1038 n visszakell irni integer-re hogy m\'fbk\f0\lang1033\'f6\f1\lang1038 dj\f0\lang1033\'f6\f1\lang1038 n, de ez most egy pr\f0\lang1033\'f3\f1\lang1038 ba\f0\lang14\par
+import java.util.ArrayList;\par
+\par
+class Domino \{\par
+\par
+    private int oldal1;\par
+    private int oldal2;\par
+\par
+    public Domino(int oldal1, int oldal2) \{           //konstruktor egy dominohoz\par
+        this.oldal1 = oldal1;\par
+\par
+        this.oldal2 = oldal2;\par
+    \}\par
+\par
+    public int getOldal1() \{\par
+        return oldal1;\par
+    \}\par
+\par
+    public int getOldal2() \{\par
+        return oldal2;\par
+    \}\par
+\par
+\par
+    @Override                                //egy domino kin\'e9zete\par
+    public String toString() \{\par
+        return getOldal1() + " | " + getOldal2();\par
+\par
+    \}\par
+\par
+    @Override\par
+    public boolean equals(Object obj) \{\par
+        Domino d1 = this;\par
+        if (obj instanceof Domino) \{\par
+            Domino d2 = (Domino) obj;\par
+            return (d1.oldal1.equals(d2.getOldal2()) && d2.oldal1.equals(d1.getOldal2()));\par
+////         return d1.equals(d2);\par
+        \} else \{\par
+            return false;\par
+        \}\par
+    \}\par
+\par
+//    @Override\par
+    public int compareTo(Domino o1) \{                 // sorrandbe tudj\'ed helyezni a Dominokat       \par
+        dominolanc.Domino o2 = new dominolanc.Domino(oldal1, oldal2);\par
+        if (o1.oldal1>o2.getOldal1()) \{\par
+            return -1;\par
+        \}\par
+        if ((o1.oldal1>o2.getOldal2())) == 0 && (o1.oldal2.compareTo(o2.getOldal1())) == 0) \{\par
+            o1.equals(o2);\par
+            return 0;\par
+        \}\par
+        if (o1.oldal2.compareTo(o2.getOldal2()) < 0) \{\par
+            return 1;\par
+        \} else \{\par
+            return 1;\par
+        \}\par
+    \}\par
+\par
+\}\par
+\par
+class DominoDoboz \{\par
+\par
+    private int[] oldalak1 = \{0, 1, 2, 3, 4, 5, 6\};\par
+    private int[] oldalak2 = \{0, 1, 2, 3, 4, 5, 6\};\par
+    private ArrayList<Domino> doboz = new ArrayList<>();\par
+\par
+    public DominoDoboz() \{                    //konstruktor egy doboznyi dominohoz\par
+        doboz = dobozKeszit();\par
+//        Kiir(doboz);\par
+\par
+    \}\par
+\par
+    public ArrayList getDoboz() \{\par
+        return doboz;\par
+    \}\par
+\par
+    public void setOldalak1(int[] oldalak1) \{\par
+        this.oldalak1 = oldalak1;\par
+    \}\par
+\par
+    public void setOldalak2(int[] oldalak2) \{\par
+        this.oldalak2 = oldalak2;\par
+    \}\par
+\par
+    \par
+//    \par
+//\par
+\par
+    public ArrayList<Domino> dobozKeszit() \{\par
+        doboz = new ArrayList();\par
+        for (Integer i = 0; i < oldalak1.length; i++) \{\par
+            for (Integer j = 0; j < oldalak1.length; j++) \{\par
+                Domino d = new Domino(i, j);\par
+                if (!(doboz.contains(keresUgyanolyan(i, j, doboz)))) //                if(!doboz.contains(d))\par
+                \{\par
+                    getDoboz().add(d);\par
+                \}\par
+            \}\par
+//                while(!(getDoboz().contains(new Domino(i, j))));\par
+        \}\par
+//        \}\par
+        System.out.println("m\'e9rete: " + doboz.size());\par
+        return doboz;\par
+    \}\par
+public Domino keresUgyanolyan(Integer o1, Integer o2, ArrayList<Domino> doboz) \{\par
+        Domino keresett = new Domino(o1, o2);\par
+        Domino megtalalt = new Domino(10, 10);                //l\'e9trehozok egy neml\'e9tez\f1\'f5 vari\f0\lang1033\'e1ci\'f3t, amit, ha van megvan a keresend\f1\'f5 itthagyok, ha nem akkor lecser\f0\'e9lem r\'e1\par
+        boolean ok = false;\par
+        int i = 0;\par
+        while (ok = true && i < doboz.size()) \{\par
+\par
+            for (int j = 0; j < doboz.size(); j++) \{\par
+\par
+                if ((doboz.get(j).compareTo(keresett)) == 0) \{\par
+                    System.out.println(keresett);\par
+                \} else \{\par
+\par
+                    megtalalt = keresett;\par
+                    ok = true;\par
+                \}\par
+\par
+            \}\par
+            i++;\par
+\par
+        \}\par
+//        \par
+//    System.out.println(megtalalt);\par
+\par
+        return megtalalt;\par
+    \}\par
+    public ArrayList<Domino> primetSzorzatKiv\'e1laszt(ArrayList doboz) \{\par
+        this.doboz = doboz;                                             //ezt a k\'e9t sort setdobozolhatnam\par
+        ArrayList<Domino> ujDoboz = new ArrayList<>();\par
+\par
+        for (Domino d : this.doboz) \{\par
+            if (d.getOldal1() == 1 && (d.getOldal2() == 2 || d.getOldal2() == 3 || d.getOldal2() == 5)) \{\par
+                ujDoboz.add(d);\par
+            \}\par
+//             ujDoboz.add(new Domino(d.setOldal1(d.getOldal1()),d.setOldal2(d.getOldal2())));\par
+        \}\par
+\par
+//    System.out.println("\'daJ: "+ujDoboz.size());\par
+        this.doboz = ujDoboz;\par
+        return ujDoboz;\par
+    \}\par
+    public ArrayList<Domino> csatlakozokKeresesEgy(ArrayList<Domino> doboz, Integer[] oldal) \{\par
+        this.doboz = doboz;                                             //ezt a k\'e9t sort setdobozolhatnam\par
+        ArrayList<Domino> ujDoboz = new ArrayList<>();\par
+        boolean ok=false;\par
+        while(!ok)\{\par
+            for (int i = 0; i < oldal.length; i++) \{                    //ez a domino els\f1\'f5 odlal\f0\'e1t v\'e1ltoztatja\par
+                    \par
+        for (int j = 0; j < doboz.size(); j++) \{\par
+            for (int x = 0; x < oldal.length; x++) \{                //ez a domino m\'e1sik oldal\'e1t v\'e1ltoztatja \par
+            if ((doboz.get(j).getOldal1() == oldal[i] && doboz.get(j).getOldal2() == oldal[x])) \{\par
+                ujDoboz.add(doboz.get(j));\par
+            \}\}\par
+                    \}\}\par
+            ok=true;   \par
+//    System.out.println("\'daJ: "+ujDoboz.size());\par
+        \}\par
+//        this.doboz = ujDoboz;\par
+        return ujDoboz;\par
+    \par
+    \}\par
+    public ArrayList<Domino> csatlakozokKeresesKetto(ArrayList<Domino> doboz, Integer[] oldal, Integer[] oldal2) \{                  //atalakit\'e1sa az el\f1\'f5z\'f5 metodusnak, amiben mindk\f0\'e9t oldallehet\f1\'f5s\f0\'e9g lehet k\'fcl\'f6n t\'f6mbb\f1\'f5l\par
+        this.doboz = doboz;                                             //ezt a k\f0\'e9t sort setdobozolhatnam\par
+        ArrayList<Domino> ujDoboz = new ArrayList<>();\par
+        boolean ok=false;\par
+        while(!ok)\{\par
+            for (int i = 0; i < oldal.length; i++) \{                    //ez a domino els\f1\'f5 odlal\f0\'e1t v\'e1ltoztatja\par
+                    \par
+        for (int j = 0; j < doboz.size(); j++) \{\par
+            for (int x = 0; x < oldal2.length; x++) \{                //ez a domino m\'e1sik oldal\'e1t v\'e1ltoztatja \par
+            if ((doboz.get(j).getOldal1() == oldal[i] && doboz.get(j).getOldal2() == oldal[x])) \{\par
+                ujDoboz.add(doboz.get(j));\par
+            \}\}\par
+                    \}\}\par
+            ok=true;   \par
+//    System.out.println("\'daJ: "+ujDoboz.size());\par
+        \}\par
+//        this.doboz = ujDoboz;\par
+        return ujDoboz;\par
+    \par
+    \}\par
+    \par
+    public void Kiir() \{\par
+        doboz.forEach((domino) -> \{\par
+            System.out.print(domino.toString() + ", ");\par
+        \});\par
+\par
+        System.out.println("\\nm\'e9rete: " + doboz.size());\par
+    \}\par
+\par
+    @Override\par
+    public String toString() \{\par
+        return (doboz.size() + " db domino a megold\'e1s.");\par
+    \}\par
+\par
+\}\par
+\par
+//    @Override\par
+//    public boolean equals(Domino d1) \{\par
+//        Domino d2=new Domino;\par
+//        if(d1.)\par
+//        \par
+//        d2.equals(d1)\par
+//        return Integer.\par
+//    \}\f1\lang14\par
+}
+ 
