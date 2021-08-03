@@ -1,0 +1,11 @@
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\bin\Release\logikai enprobalom.exe.config
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\bin\Release\logikai enprobalom.exe
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\bin\Release\logikai enprobalom.pdb
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai enprobalom.csprojAssemblyReference.cache
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai_enprobalom.Form1.resources
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai_enprobalom.Form2.resources
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai_enprobalom.Properties.Resources.resources
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai enprobalom.csproj.GenerateResource.cache
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai enprobalom.csproj.CoreCompileInputs.cache
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai enprobalom.exe
+C:\Users\Szalamandra\Documents\szf\egressy\c++\03logikai\logikai enprobalom\obj\Release\logikai enprobalom.pdb

@@ -1,0 +1,8 @@
+1:Eres Tamás:Piliscsaba:József A. u. 23:1370000:1974-11-21
+2:Por Ágota:Piliscsaba:Arany János u. 2.:3357000:1982-05-18
+3:Neves Borbála:Pilisvörösvár:Május 1. u. 12.:2280000:1984-03-17
+4:Ránti Lajos:Solymár:Törökkút u. 28.:1412000:1972-02-10
+5:Kentaur Katalin:Piliscsaba: u. 42.:3315000:1975-05-01
+6:Lapos Árpád:Pilisszántó:Úttörő köz u. 28.:1320000:1989-05-20
+7:Tank Béla:Piliscsaba:Jókai u. 3.:1320000:1978-05-11
+8:Nagy Árpád:Piliscsaba:Jókai u. 8.:2315000:1979-03-24

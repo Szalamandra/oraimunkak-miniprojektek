@@ -1,0 +1,33 @@
+/* Zsigmond Réka, 2021-01-10, esti Szoft */
+
+header,footer{
+    text-align:center;
+}
+
+body{
+    background-color:rgba(138, 146, 175, 0.623);
+}
+body:hover{
+    background-color: salmon;
+    font-size: 1.5em;
+    transition:background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms, font-size 1000ms ease-in-out 1000ms;
+}
+#container:hover p:first-child{
+    display:none;
+}
+
+#container{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    box-shadow: saddlebrown;
+}
+
+h1{
+    text-shadow:2px 2px rosybrown;
+    text-transform: uppercase;
+    text-decoration-style: dashed;
+
+    
+}
+
